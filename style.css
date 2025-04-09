@@ -170,15 +170,16 @@ span{
 
 /* shop section  */
 .shop-section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-evenly; */
     background-color: #e2e7e6;
 }
 .box {
     /* border: 2px solid; */
     height: 400px;
-    width: 23%;
+    width: 90%;
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 15px;
@@ -288,4 +289,205 @@ footer {
 .copyright {
      
     padding-top: 5px;
+}
+
+@media screen and (max-width:1350px) {
+     h2{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+     .nav-search{
+        width: 200px;
+        height: 30px;
+     }
+
+     .hero-msg {
+        
+        height: 30px;
+        font-size: 0.75rem;
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .shop-section{
+        padding: 22px 6px 22px 33px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .foot-panel2{
+        height: 650px;
+    }
+    .foot-panel2 ul li a {
+        font-size: 0.7rem;
+    }
+    .foot-panel2 p {
+        font-size: 0.8rem;
+    }
+    .box{
+        height: 200px;
+    }
+    .box-img{
+        height: 100px;
+        background-size: contain;
+    }
+    .hero-msg{
+        height: 30px;
+        font-size: 0.6rem;
+    }
+    .hero-section{
+        height: 178px;
+    }
+    .panel-ops{
+        font-size: 0.6rem;
+    }
+    .panel-deals{
+        font-size: 0.6rem;
+    }
+    .fa-solid{
+        font-size: 0.6rem;
+    }
+    .all {
+        font-size: 0.6rem;
+    }
+    .panel{
+        height: 30px;
+    }
+    .nav-search{
+        width: 100px;
+        height: 20px;
+    }
+    .nav-cart i{
+        font-size: 10px;
+    }
+    .nav-cart {
+        font-size: 0.7rem;
+    }
+    .nav-second{
+        font-size: 0.5rem;
+    }
+    .search-input{
+        font-size: 0.5rem;
+    }
+    .search-select{
+        font-size: 0.6rem;
+    }
+    .add-sec{
+        font-size: 0.8rem;
+    }
+    .add-first{
+        font-size: 0.6rem;
+        margin-left: 10px;
+    }
+
+}
+
+
+@media screen and (max-width:450px) {
+    .list2, .list4{
+        display: none;
+    }
+    .foot-panel2{
+        height: 360px;
+    }
+    .foot-panel4{
+        height: 60px;
+        font-size: 0.5rem;
+    }
+    .foot-panel3{
+        height: 50px;
+    }
+    .foot-panel2 ul li a {
+        font-size: 0.5rem;
+    }
+    .foot-panel2 p {
+        font-size: 0.6rem;
+    }
+    .foot-panel1{
+        font-size: 0.6rem;
+        height: 40px;
+    }
+    .box-content h2{
+        font-size: 10px;
+    }
+    .box{
+        height: 150px;
+        padding-top: 5px;
+    }
+    .box-img{
+        height: 72px;
+        background-size: contain;
+    }
+    .box-content p{
+        font-size: 0.7rem;
+    }
+    .box-content{
+        margin: 0rem 0.6rem 0rem 0.6rem;
+    }
+    .nav-logo, .logo{
+        height: 30px;
+        width: 60px;
+    }
+    .nav-search{
+        width: 70px;
+        height: 15px;
+    }
+    .search-select{
+        font-size: 0.5rem;
+    }
+    .fa-solid{
+        font-size: 0.4rem;
+    }
+    .search-input {
+        font-size: 0.4rem;
+    }
+    .add-first {
+        font-size: 0.4rem;
+        margin-left: 0px;
+    }
+    .add-sec {
+        font-size: 0.6rem;
+    }
+    .nav-return{
+        display: none;
+    }
+    .nav-second {
+        font-size: 0.4rem;
+    }
+    span {
+        font-size: 0.5rem;
+    }
+    .nav-cart {
+        font-size: 0.5rem;
+    }
+    .nav-cart i {
+        font-size: 7px;
+    }
+    .hero-section {
+        height: 115px;
+    }
+    .hero-msg {
+        height: 16px;
+        font-size: 0.4rem;
+    }
+    .panel-ops {
+        font-size: 0.5rem;
+    }
+    .panel-ops p {
+        margin-left: 8px;
+    }
+    .panel-deals {
+        font-size: 0.4rem;
+        margin-left: 15px;
+    }
+    .all {
+        font-size: 0.4rem;
+    }
+    .navbar{
+        height: 40px;
+    }
+     
 }
